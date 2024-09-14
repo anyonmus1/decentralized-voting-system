@@ -1,38 +1,72 @@
+/* Center and style the main container */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #f4f7fa; /* Light background color */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+/* Style the header */
+.App-header {
+  background-color: #282c34;
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for the proposal list */
+.proposal-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.proposal-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  color: #333;
+}
+
+/* Style for radio buttons */
+.proposal-list input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.2); /* Make the radio button bigger */
+}
+
+/* Style for the submit button */
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 40px; /* Increased margin for better spacing */
+  width: 100%; /* Make the button take full width */
+  max-width: 200px; /* Set a maximum width */
+  text-align: center; /* Center the text on the button */
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
 }
